@@ -1,4 +1,4 @@
-# NeuralNetworks_BankChurnPrediction
+# Neural Networks Bank Churn Prediction
 ## Problem Statement
 ### Context
 In today's competitive banking landscape, customer churn has become a pressing concern for banks. With the rise of fintech startups and alternative banking options, customers have more choices than ever before. As a result, banks must proactively identify and address potential churn risks to maintain customer satisfaction and loyalty. By leveraging advanced analytics and machine learning techniques, banks can gain insights into customer behavior and preferences, enabling them to tailor their services and offerings to meet evolving needs.

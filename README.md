@@ -1,9 +1,34 @@
 # Neural Networks Bank Churn Prediction
-## Problem Statement
-### Context
-In today's competitive banking landscape, customer churn has become a pressing concern for banks. With the rise of fintech startups and alternative banking options, customers have more choices than ever before. As a result, banks must proactively identify and address potential churn risks to maintain customer satisfaction and loyalty. By leveraging advanced analytics and machine learning techniques, banks can gain insights into customer behavior and preferences, enabling them to tailor their services and offerings to meet evolving needs.
+ Predicting Customer Churn
 
-## Objective
-The main goal is to leverage neural network-based classification algorithms to develop a predictive model that can effectively determine the likelihood of customer churn. By analyzing various aspects of the banking service, including customer demographics, transaction history, and engagement metrics, the model aims to identify key factors influencing churn behavior. This understanding will enable management to prioritize efforts towards enhancing service quality, addressing customer concerns, and implementing retention initiatives tailored to specific customer segments. Ultimately, the predictive model will serve as a valuable tool for the bank to mitigate churn, optimize customer retention strategies, and foster long-term relationships with its clientele.
+## Summary
 
-As a data scientist within the bank, the objective is to develop a neural network-based classifier to predict whether a customer will leave the bank within the next six months.
+This project aims to develop a predictive model to identify potential customer churn in a banking context. The analysis utilizes neural network-based classification algorithms to predict whether a customer will leave the bank within the next six months.
+
+## Model Performance
+
+The best-performing model achieved an accuracy of approximately 82%. However, there's room for improvement in precision and recall, particularly for identifying churn cases. The precision for churn prediction is relatively lower, but the model captures a significant portion of actual churn cases with reasonable recall.
+
+### Models Used:
+- Model 1: Built with Adam optimizer
+- Model 2: Built with Adam optimizer and Dropout
+- Model 3: Built with balanced data using SMOTE and SGD optimizer
+- Model 4: Built with balanced data using SMOTE and Adam optimizer
+- Model 5: Built with balanced data using SMOTE, Adam optimizer, and Dropout
+
+#### Model 5 (Best Model):
+- Precision: 0.91
+- Recall: 0.85
+- F1-score: 0.88
+- Accuracy: 0.82
+- Support:
+  - Class 0: 1327
+  - Class 1: 340
+
+## Business Recommendations
+
+- **Balance Precision and Recall**: Focus on improving recall without sacrificing precision to better identify churn cases.
+- **Utilize Predictions for Customer Retention**: Leverage model predictions to prioritize efforts towards retaining customers who are predicted to churn.
+- **Continuous Model Monitoring and Improvement**: Regularly monitor the model's performance and update it with new data to ensure its effectiveness in supporting customer retention efforts.
+
+

@@ -16,19 +16,27 @@ The best-performing model achieved an accuracy of approximately 82%. However, th
 - Model 4: Built with balanced data using SMOTE and Adam optimizer
 - Model 5: Built with balanced data using SMOTE, Adam optimizer, and Dropout
 
-#### Model 5 (Best Model):
-- Precision: 0.91
-- Recall: 0.85
-- F1-score: 0.88
-- Accuracy: 0.82
-- Support:
-  - Class 0: 1327
-  - Class 1: 340
 
-## Business Recommendations
+### Winning Model Performance Metrics:
 
-- **Balance Precision and Recall**: Focus on improving recall without sacrificing precision to better identify churn cases.
-- **Utilize Predictions for Customer Retention**: Leverage model predictions to prioritize efforts towards retaining customers who are predicted to churn.
-- **Continuous Model Monitoring and Improvement**: Regularly monitor the model's performance and update it with new data to ensure its effectiveness in supporting customer retention efforts.
+- **Accuracy**: The model achieved an accuracy of approximately 82%, indicating that it correctly classified 82% of the instances in the test dataset.
 
+- **Precision**: For predicting churn (class 1), the precision is 54%, implying that when the model predicts churn, it is correct 54% of the time. For non-churn (class 0), the precision is 91%.
 
+- **Recall**: The recall for churn (class 1) is 68%, meaning that the model identified 68% of the actual churn cases correctly. For non-churn (class 0), the recall is 85%.
+
+- **F1-score**: The F1-score, which is the harmonic mean of precision and recall, is 0.60 for churn (class 1) and 0.88 for non-churn (class 0).
+
+### Actionable Insights and Business Recommendations
+
+- **Precision and Recall Balance**: The model demonstrates a trade-off between precision and recall. While it achieves a high precision for non-churn customers, the precision for churn prediction is relatively lower. However, it manages to capture a significant portion of actual churn cases with a reasonable recall. This indicates that the model can effectively identify potential churners, albeit with some misclassifications.
+
+- **Focus on Recall Improvement**: To improve the model's performance further, particularly in identifying churn cases, focus should be placed on improving recall without significantly sacrificing precision. This can be achieved through strategies such as feature engineering, exploring different model architectures, adjusting class weights, or collecting more diverse data.
+
+- **Utilizing Predictions for Customer Retention**: Despite its limitations, the model can still provide valuable insights for the bank's customer retention strategies. By leveraging the model predictions, the bank can prioritize efforts towards retaining customers who are predicted to churn, offering tailored incentives, personalized communication, or targeted marketing campaigns to mitigate churn risk.
+
+- **Continuous Model Monitoring and Improvement**: It's essential to continuously monitor the model's performance and retrain it periodically with updated data. As customer behavior evolves over time, the model needs to adapt to capture new patterns and trends accurately. Regular evaluation and refinement of the model will ensure its effectiveness in supporting the bank's customer retention efforts.
+
+## Conclusion
+
+While Model 5 provides a solid foundation for predicting customer churn, there's room for improvement to enhance its predictive power and applicability in real-world business scenarios. By focusing on refining the model and integrating its predictions into strategic decision-making processes, the bank can proactively address churn risk and foster long-term customer relationships.
